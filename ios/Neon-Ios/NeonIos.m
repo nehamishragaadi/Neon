@@ -13,13 +13,13 @@ RCT_EXPORT_METHOD(sampleMethod:(NSString *)stringArgument numberParameter:(nonnu
 //
    //[[NSNotificationCenter defaultCenter] postNotificationName:ReactEventCloseModal object:nil];
     
-    dispatch_async(dispatch_get_main_queue(), ^{
-        UIViewController *rootVC = UIApplication.sharedApplication.delegate.window.rootViewController;
-        ViewController *controller = [[ViewController alloc] init];
-        UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:controller];
-        [rootVC presentViewController:nav animated:YES completion:^{
-        }];
-    });
+//    dispatch_async(dispatch_get_main_queue(), ^{
+//        UIViewController *rootVC = UIApplication.sharedApplication.delegate.window.rootViewController;
+//        ViewController *controller = [[ViewController alloc] init];
+//        UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:controller];
+//        [rootVC presentViewController:nav animated:YES completion:^{
+//        }];
+//    });
 }
 
 @end

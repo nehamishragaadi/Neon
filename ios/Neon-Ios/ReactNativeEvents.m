@@ -8,3 +8,5 @@
 #import "ReactNativeEvents.h"
 
 NSString * const ReactEventCloseModal = @"closeModal";
+
+

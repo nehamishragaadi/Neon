@@ -42,19 +42,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         
         //        self.setupAllTheThings()
     }
-    private func registerToReactNativeEvents() {
-        NotificationCenter.default.addObserver(self,
-                                               selector: #selector(closeModal),
-                                               name: NSNotification.Name(rawValue: ReactEventCloseModal),
-                                               object: nil)
-    }
-    
-    @objc private func closeModal() {
-        print("react native called")
-//        DispatchQueue.main.async { [unowned self] in
-//            self.dismiss(animated: true, completion: nil)
-//        }
-    }
+
     override func viewDidAppear(_ animated: Bool) {
        
     }
